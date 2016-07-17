@@ -11,5 +11,8 @@
   ],
   "repository": "amio/hyperterm-blink",
   "author": "Amio <amio.cn@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash.throttle": "^4.0.1"
+  }
 }
