@@ -1,0 +1,15 @@
+{
+  "name": "hyperterm-blink",
+  "version": "1.0.0",
+  "description": "A living cursor blinking.",
+  "main": "index.js",
+  "keywords": [
+    "hyperterm",
+    "hyperterm-plugin",
+    "cursor",
+    "blink"
+  ],
+  "repository": "amio/hyperterm-blink",
+  "author": "Amio <amio.cn@gmail.com>",
+  "license": "MIT"
+}
