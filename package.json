@@ -12,8 +12,9 @@
   "keywords": [
     "hyper",
     "hyperterm",
-    "hyper-plubin",
+    "hyper-plugin",
     "hyperterm-plugin",
+    "plugin",
     "cursor",
     "blink"
   ]
