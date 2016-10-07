@@ -1,18 +1,20 @@
 {
-  "name": "hyperterm-blink",
+  "name": "hyper-blink",
   "version": "1.1.0",
-  "description": "A living cursor blinking.",
+  "description": "Let Hyper's cursor blink.",
   "main": "index.js",
-  "keywords": [
-    "hyperterm",
-    "hyperterm-plugin",
-    "cursor",
-    "blink"
-  ],
-  "repository": "amio/hyperterm-blink",
+  "repository": "amio/hyper-blink",
   "author": "Amio <amio.cn@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "lodash.throttle": "^4.0.1"
-  }
+  },
+  "keywords": [
+    "hyper",
+    "hyperterm",
+    "hyper-plubin",
+    "hyperterm-plugin",
+    "cursor",
+    "blink"
+  ]
 }
