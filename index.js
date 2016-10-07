@@ -1,4 +1,5 @@
 const throttle = require('lodash.throttle')
+
 const BUSY_TIMEOUT = 700  // ms
 const BUSY_THROTTLE = BUSY_TIMEOUT / 2
 
@@ -10,12 +11,12 @@ module.exports.decorateConfig = config => {
         animation: blink 1s ease infinite;
       }
       @keyframes blink {
-        0%, 40% { opacity: 0 }
-        50%, 90% { opacity: 1 }
+        10%, 50% { opacity: 0 }
+        60%, 100% { opacity: 1 }
       }
     `
   })
-};
+}
 
 module.exports.decorateTerm = (Term, {React, notify}) => {
   return class extends React.Component {
@@ -29,10 +30,14 @@ module.exports.decorateTerm = (Term, {React, notify}) => {
     }
 
     _onTerminal (term) {
-      if (this.props.onTerminal) this.props.onTerminal(term)
+      /* eslint-disable prop-types */
+      if (this.props.onTerminal) {
+        this.props.onTerminal(term)
+      }
 
       this._cursor = term.cursorNode_
 
+      /* global MutationObserver */
       this._observer = new MutationObserver(this._onCursorChange)
       this._observer.observe(this._cursor, {
         attributes: true,
@@ -70,7 +75,7 @@ module.exports.decorateTerm = (Term, {React, notify}) => {
     render () {
       return React.createElement(Term, Object.assign({}, this.props, {
         onTerminal: this._onTerminal
-      }));
+      }))
     }
 
     componentWillUnmount () {
