@@ -1,6 +1,6 @@
 {
   "name": "hyper-blink",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Let Hyper's cursor blink.",
   "main": "index.js",
   "repository": "amio/hyper-blink",
