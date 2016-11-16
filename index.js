@@ -7,7 +7,7 @@ module.exports.decorateConfig = config => {
   return Object.assign({}, config, {
     termCSS: `
       ${config.termCSS || ''}
-      .cursor-node[focus=true]:not([moving]) {
+      .cursor-node[focus=true]:not([hyper-blink-moving]) {
         animation: blink 1s ease infinite;
       }
       @keyframes blink {
@@ -64,12 +64,12 @@ module.exports.decorateTerm = (Term, {React, notify}) => {
 
     _markBusy () {
       // console.log('!!! Cursor Moving !!!')
-      this._cursor.setAttribute('moving', true)
+      this._cursor.setAttribute('hyper-blink-moving', true)
     }
 
     _markIdle () {
       // console.log('...idle...')
-      this._cursor.removeAttribute('moving')
+      this._cursor.removeAttribute('hyper-blink-moving')
     }
 
     render () {
