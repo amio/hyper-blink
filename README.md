@@ -1,12 +1,12 @@
 # Hyper: Blink! [![npm-version][npm-badge]][npm-link]
 
-A living cursor blink, so here is this [Hyper](https://hyperterm.org) plugin, making it's cursor blink.
+A living cursor blinks, so here is this [Hyper](https://hyperterm.org) plugin making its cursor blink.
 
 ![hyper-blink][screenshot]
 
 ### Install
 
-1. Open Hyper's preferences with <kbd>Cmd</kbd> + <kbd>,</kbd> (or manually at `~/.hyper.js`) with your editor.
+1. Open Hyper’s preferences with <kbd>Cmd</kbd> + <kbd>,</kbd> (or manually at `~/.hyper.js`) with your editor.
 2. Update your list of plugins to include `hyper-blink`, like so:
 
   ```javascript
@@ -14,7 +14,7 @@ A living cursor blink, so here is this [Hyper](https://hyperterm.org) plugin, ma
     'hyper-blink'
   ],
   ```
-3. Fully reload Hyper (`Cmd + Shift + R`), and tada!
+3. Fully reload Hyper (<kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>), and tada!
 
 ### License
 
