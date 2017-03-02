@@ -1,5 +1,7 @@
 # Hyper: Blink! [![npm-version][npm-badge]][npm-link]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/amio/hyper-blink.svg)](https://greenkeeper.io/)
+
 A living cursor blinks, so here is this [Hyper](https://hyperterm.org) plugin making its cursor blink.
 
 ![hyper-blink][screenshot]
