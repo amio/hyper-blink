@@ -1,6 +1,6 @@
 # Hyper: Blink! [![npm-version][npm-badge]][npm-link]
 
-A living cursor blinks, so here is this [Hyper](https://hyperterm.org) plugin making its cursor blink.
+A living cursor blinks. This plugin for [Hyper](https://hyper.is) makes its cursor blink.
 
 ![hyper-blink][screenshot]
 
